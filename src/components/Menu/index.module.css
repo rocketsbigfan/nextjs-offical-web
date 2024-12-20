@@ -1,0 +1,57 @@
+.wm-menu,
+.wm-submenu .wm-menu-item {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  .wm-menu-item-text {
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 24px;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.06);
+    }
+  }
+}
+.wm-submenu {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  .wm-menu-item-text {
+    padding: 0 48px !important;
+  }
+  animation: wm-submenu-open 0.3s forwards; 
+}
+.wm-submenu.wm-submenu-close {
+  animation: close 0.3s forwards;
+}
+
+@keyframes wm-submenu-open {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes close {
+  from {
+    height: 100%;
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+.wm-header {
+  @apply bg-black h-[64px];
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.wm-header > .wm-header-nav {
+  @apply flex items-center mx-auto  px-[32px] h-full list-none justify-between text-sm;
+  max-width: 1440px;
+}
+
+.wm-header-menu-icon-item {
+  @apply w-[26px] h-[2px];
+  background-color: #c6c6c6;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.wm-header-menu-icon-item:not(:first-child) {
+  @apply mt-[6px];
+}
+.wm-header-menu-icon-wrapper {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.wm-header-menu-icon-wrapper.open {
+  transform: translateY(-5px);
+}
+.wm-header-menu-icon-wrapper.open .wm-header-menu-icon-item {
+  background-color: #fff;
+}
+.wm-header-menu-icon-wrapper.open .wm-header-menu-icon-item:nth-child(1) {
+  transform: rotate(-45deg);
+  margin-top: 10px;
+}
+.wm-header-menu-icon-wrapper.open .wm-header-menu-icon-item:nth-child(2) {
+  opacity: 0;
+}
+.wm-header-menu-icon-wrapper.open .wm-header-menu-icon-item:nth-child(3) {
+  transform: rotate(45deg);
+  margin-top: -10px;
+}

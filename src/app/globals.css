@@ -2,20 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import '@/components/Header/index.css';
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-wrapper {
+  @apply min-h-[550px] bg-cover bg-center md:min-h-[686px];
+}
+
+.home-banner {
+  background-image: url('/images/banner-01.png');
+}
+.special-banner {
+  background-image: url('/images/banner-04.png');
+}
+.about-banner {
+  background-image: url('/images/banner-05.png');
+}
+.enterprise-banner {
+  background-image: url('/images/banner-03.png');
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
