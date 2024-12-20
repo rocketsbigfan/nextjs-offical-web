@@ -14,7 +14,7 @@ export default function About() {
       <section className="pt-20 pb-28">
         <div className="max-w-[1440px] mx-auto px-8">
           <h2 className="p-[50px_32px] text-3xl md:text-4xl text-center font-medium mb-10">我们的公司</h2>
-          <p className="text-xl text-center font-normal mb-10">Workmins 建立了一个由客户、合作伙伴、员工和思想领袖组成的组织，致力于让世界运转更卓越，让人们生活更美好。</p>
+          <p className="text-xl text-center font-normal mb-10">Wm 建立了一个由客户、合作伙伴、员工和思想领袖组成的组织，致力于让世界运转更卓越，让人们生活更美好。</p>
           <div className="flex flex-col md:flex-row md:min-h-[450px] md:items-center">
             <div className="basis-full md:basis-2/5 md:pr-10">
               <h4 className="text-3xl md:text-4xl font-bold mb-3">关于 Wm</h4>

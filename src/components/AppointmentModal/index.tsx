@@ -59,7 +59,7 @@ export const AppointmentModal = () => {
               </div>
             </div>
             <div className="px-10 py-5">
-              <section className="text-[30px] leading-[44px] text-center lg:text-[40px] lg:leading-[54px]">感谢您预约 Workmins 企业管理系统的演示！</section>
+              <section className="text-[30px] leading-[44px] text-center lg:text-[40px] lg:leading-[54px]">感谢您预约 Wm 企业管理系统的演示！</section>
               <section className="text-[18px] leading-[44px] text-center">请填写下表，我们将尽快与您联系。</section>
               <AppointmentForm
                 onSubmit={handleSubmit}

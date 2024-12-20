@@ -21,10 +21,10 @@ const FooterLinkList = [
         title: 'ERP'
       }, {
         href: '/database',
-        title: 'Workmins Database'
+        title: 'Wm Database'
       }, {
-        href: '/workmins-os',
-        title: 'Workmins OS'
+        href: '/Wm-os',
+        title: 'Wm OS'
       }
     ]
   }, {
@@ -66,7 +66,7 @@ const FooterLinkList = [
     links: [
       {
         href: '/',
-        title: 'company@workmins.com'
+        title: 'company@Wm.com'
       }
     ]
   }
@@ -102,7 +102,7 @@ export default function Footer() {
           </div>
         </section>
         <section className='max-w-[1440px] mx-auto wm-footer-copyright'>
-          <p className='text-white text-center mt-6'><Link href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2022029713号</Link> Copyright © 2024 WorkMins. All rights reserved.</p>
+          <p className='text-white text-center mt-6'><Link href='https://beian.miit.gov.cn/#/Integrated/index'>浙ICP备2022029713号</Link> Copyright © 2024 Wm. All rights reserved.</p>
         </section>
       </section>
     </footer>
